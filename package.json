@@ -1,0 +1,17 @@
+{
+  "name": "@kitchn/monorepo",
+  "packageManager": "yarn@3.3.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach --topological-dev --verbose run build",
+    "w:protocol": "yarn workspace @kitchn/protocol",
+    "w:sdk": "yarn workspace @kitchn/sdk",
+    "w:worker": "yarn workspace @kitchn/worker"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
