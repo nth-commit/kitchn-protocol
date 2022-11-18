@@ -5,7 +5,7 @@
     "declaration": true,
     "noEmitOnError": true,
     "target": "ES2022",
-    "module": "ES2022",
+    "module": "CommonJS",
     "moduleResolution": "Node",
     "strict": true,
     "noImplicitAny": true,
@@ -26,6 +26,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "declarationMap": true
   }
 }
