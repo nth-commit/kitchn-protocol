@@ -14,6 +14,7 @@ describe('Worker', () => {
     const kitchnWorker = initKitchnWorker(kitchn)
     const abortController = new AbortController()
     const { done } = await kitchnWorker.start(abortController.signal)
+    abortController.abort()
     await done
   })
 })
