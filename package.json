@@ -7,8 +7,10 @@
   ],
   "scripts": {
     "build": "yarn workspaces foreach --topological-dev --verbose run build",
+    "build:test": "yarn workspaces foreach --topological-dev --verbose run build:test",
     "build:watch": "yarn workspaces foreach --parallel --verbose --interlaced -j unlimited run build:watch",
     "clean": "yarn workspaces foreach --parallel --verbose run clean",
+    "test": "yarn workspaces foreach --topological-dev --verbose run test",
     "w:e2e": "yarn workspace @kitchn/e2e",
     "w:protocol": "yarn workspace @kitchn/protocol",
     "w:sdk": "yarn workspace @kitchn/sdk",
