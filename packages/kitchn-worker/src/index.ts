@@ -1,29 +1,25 @@
-import { Provider } from '@ethersproject/abstract-provider'
-import { initKitchn } from '@kitchn/sdk'
+import { Kitchn } from '@kitchn/sdk'
 
 export type KitchnWorker = {
   /**
-   * Notifies the protocol that the worker is ready to be assigned work.
+   * Notifies the protocol that the worker is ready to be assigned work. Graceful shutdown is really important right
+   * now, as lazy workers will be punished to some degree before the protocol marks them as dead.
+   * @param abort An abort signal that begins graceful shutdown.
+   * @returns An object that contains a done promise. Once the done promise completes, then the protocol has been
+   * notified that the worker is now inactive, and it is safe to end the process.
    */
-  start(): Promise<void>
-  /**
-   * Notifies the protocol that the worker should stop being assigned work. It is best practice to call this method to
-   * limit collateral losses (lazy workers are punished). In the future, an auto-stop service will become available.
-   */
-  stop(): Promise<void>
+  start(abort: AbortSignal): Promise<{ done: Promise<void> }>
 }
 
 /**
- * Creates a Kitchn Worker, responsible for executing jobs in the Kitchn Protocol.
- *
- * @param ethersProvider
- * @returns An instance of the Kitchn SDK, acting on behalf of the given provider.
+ * Creates a Kitchn Worker, responsible for executing jobs for the Kitchn Protocol.
+ * @param _kitchn An instance of the Kitchn SDK
  */
-export function createKitchnWorker(ethersProvider: Provider): KitchnWorker {
-  initKitchn(ethersProvider) // Test
-
+export function initKitchnWorker(_kitchn: Kitchn): KitchnWorker {
   return {
-    start: () => Promise.resolve(),
-    stop: () => Promise.resolve(),
+    start: (abort) =>
+      Promise.resolve({
+        done: new Promise((resolve) => abort.addEventListener('abort', () => resolve())),
+      }),
   }
 }
