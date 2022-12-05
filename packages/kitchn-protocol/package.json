@@ -23,7 +23,7 @@
     "@typechain/hardhat": "^6.1.4",
     "@types/chai": "^4.3.4",
     "@types/mocha": "^9.1.1",
-    "@types/node": "^18.11.9",
+    "@types/node": "^18.11.10",
     "@uniswap/hardhat-v3-deploy": "^0.1.1",
     "chai": "^4.3.7",
     "ethers": "^5.7.2",
