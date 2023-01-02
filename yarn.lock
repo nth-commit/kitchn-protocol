@@ -2086,7 +2086,7 @@ __metadata:
     "@typechain/hardhat": ^6.1.4
     "@types/chai": ^4.3.4
     "@types/mocha": ^9.1.1
-    "@types/node": ^18.11.9
+    "@types/node": ^18.11.18
     "@uniswap/hardhat-v3-deploy": ^0.1.1
     chai: ^4.3.7
     ethers: ^5.7.2
@@ -2125,7 +2125,7 @@ __metadata:
     "@typechain/hardhat": ^6.1.4
     "@types/chai": ^4.3.4
     "@types/mocha": ^9.1.1
-    "@types/node": ^18.11.9
+    "@types/node": ^18.11.18
     "@uniswap/hardhat-v3-deploy": ^0.1.1
     chai: ^4.3.7
     ethers: ^5.7.2
@@ -3007,7 +3007,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.11.9":
+"@types/node@npm:*":
   version: 18.11.9
   resolution: "@types/node@npm:18.11.9"
   checksum: cc0aae109e9b7adefc32eecb838d6fad931663bb06484b5e9cbbbf74865c721b03d16fd8d74ad90e31dbe093d956a7c2c306ba5429ba0c00f3f7505103d7a496
@@ -3018,6 +3018,13 @@ __metadata:
   version: 10.17.60
   resolution: "@types/node@npm:10.17.60"
   checksum: 2cdb3a77d071ba8513e5e8306fa64bf50e3c3302390feeaeff1fd325dd25c8441369715dfc8e3701011a72fed5958c7dfa94eb9239a81b3c286caa4d97db6eef
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.11.18":
+  version: 18.11.18
+  resolution: "@types/node@npm:18.11.18"
+  checksum: 03f17f9480f8d775c8a72da5ea7e9383db5f6d85aa5fefde90dd953a1449bd5e4ffde376f139da4f3744b4c83942166d2a7603969a6f8ea826edfb16e6e3b49d
   languageName: node
   linkType: hard
 
