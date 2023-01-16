@@ -2090,7 +2090,7 @@ __metadata:
     "@uniswap/hardhat-v3-deploy": ^0.1.1
     chai: ^4.3.7
     ethers: ^5.7.2
-    hardhat: ^2.12.2
+    hardhat: ^2.12.6
     hardhat-gas-reporter: ^1.0.9
     hardhat-watcher: ^2.5.0
     solidity-coverage: ^0.8.2
@@ -2129,7 +2129,7 @@ __metadata:
     "@uniswap/hardhat-v3-deploy": ^0.1.1
     chai: ^4.3.7
     ethers: ^5.7.2
-    hardhat: ^2.12.2
+    hardhat: ^2.12.6
     hardhat-gas-reporter: ^1.0.9
     hardhat-watcher: ^2.5.0
     solidity-coverage: ^0.8.2
@@ -5759,9 +5759,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hardhat@npm:^2.12.2":
-  version: 2.12.2
-  resolution: "hardhat@npm:2.12.2"
+"hardhat@npm:^2.12.6":
+  version: 2.12.6
+  resolution: "hardhat@npm:2.12.6"
   dependencies:
     "@ethersproject/abi": ^5.1.2
     "@metamask/eth-sig-util": ^4.0.0
@@ -5810,7 +5810,7 @@ __metadata:
     source-map-support: ^0.5.13
     stacktrace-parser: ^0.1.10
     tsort: 0.0.1
-    undici: ^5.4.0
+    undici: ^5.14.0
     uuid: ^8.3.2
     ws: ^7.4.6
   peerDependencies:
@@ -5823,7 +5823,7 @@ __metadata:
       optional: true
   bin:
     hardhat: internal/cli/cli.js
-  checksum: cd45bf9d4f15d967bd2d8154cc5bc60e7d0d4bab80caea909d36e3660437fc9f6b4faf41736ed3b75b11ff15ac9a9b68828eebb1026ed9fa8d9eb87242f061d2
+  checksum: c97c5ed2336541e8b0a3034dc5c94319cffbf93fa1b6385091858f8eefb392129c6109cbaca0837fd4dff4d627b3e3ccb931706257a5d0bee71fc7f7fe90a536
   languageName: node
   linkType: hard
 
@@ -9779,6 +9779,15 @@ __metadata:
     has-symbols: ^1.0.3
     which-boxed-primitive: ^1.0.2
   checksum: b7a1cf5862b5e4b5deb091672ffa579aa274f648410009c81cca63fed3b62b610c4f3b773f912ce545bb4e31edc3138975b5bc777fc6e4817dca51affb6380e9
+  languageName: node
+  linkType: hard
+
+"undici@npm:^5.14.0":
+  version: 5.15.0
+  resolution: "undici@npm:5.15.0"
+  dependencies:
+    busboy: ^1.6.0
+  checksum: cdc03ceff8d2b76a5ae08dc48d0b9d44dcb970f6e89e8a3cfe7031b9351dd3c90b223c143565c153a5f1165cd573aae1b128e6b9f557b4af4eb36da337a2a345
   languageName: node
   linkType: hard
 
